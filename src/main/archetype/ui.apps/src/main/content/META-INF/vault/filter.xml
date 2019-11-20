@@ -4,4 +4,7 @@
 #if ( $optionIncludeErrorHandler == "y" )
     <filter root="/apps/sling" />
 #end
+#if ( $isSingleCountryWebsite  == "n" )
+    <filter root="/apps/msm/${appsFolderName}_blueprint" mode="merge"/>
+#end
 </workspaceFilter>
